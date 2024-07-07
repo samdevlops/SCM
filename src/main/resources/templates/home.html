@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <style>
-      .container {
-        text-align: center;
-        padding: 30px;
-        background-color: rgb(84, 145, 201);
-        margin-top: auto;
-      }
-    </style>
+    <link rel="stylesheet" data-th-href="@{/css/output.css}" />
   </head>
   <body>
-    <div class="container">
-      <h1 data-th-text="${name}">Home Page</h1>
-      <p>Github URL Link : <a data-th-href="${githubLink}">here</a></p>
+    <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4 flex flex-col space-y-3">
+      <h1 class="text-2xl font-bold" data-th-text="${name}">Home Page</h1>
+      <p class="text-xl text-bold">
+        Github URL Link :
+        <a class="text-green-500" data-th-href="${githubLink}">here</a>
+      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
         exercitationem culpa deserunt at. Numquam eligendi ipsum praesentium
